@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Zabytki miasta Nysa</title>
+    
+    <script type="text/javascript">
+        function odliczanie()
+        {
+            var dzisiaj=new Date();
+            var godzina=dzisiaj.getHours();
+            var minuta=dzisiaj.getMinutes();
+            var sekunda=dzisiaj.getSeconds();
+            document.getElementById("zegar").innerHTML=godzina+":"+minuta+":"+sekunda;
+            
+            setTimeout("odliczanie()",1000);      
+        }
+    </script>
+    
+    
+</head>
+
+<body>
+<div id="container">
+    
+    <div id="logo">
+        <img src="../img/herbpowiatu.png" width="90" align="left" />
+        <img src="../img/herb.png" width="90" align="right" />
+        <h1><strong>Zabytki i atrakcje<br>miasta Nysa</strong></h1>
+    </div>
+    <div id="domek">
+        <a href="../index.html"><img src="../img/Home_Icon.svg"  width="55" align="middle"/></a></div>
+    
+    
+    <div id="nav"><a href="../koscioly/koscioly.html">KOŚCIOŁY</a></div>
+    <div id="nav"><a href="../atrakcje/atrakcje.html">ATRAKCJE</a></div>
+    <div id="nav"><a href="../zabytki/zabytki.html">ZABYTKI</a></div>
+    <div id="nav"><a href="../inne/inne.html">INNE</a></div>
+    <div id="zegar"></div>
+        <script type="text/javascript">
+            odliczanie();
+        </script>
+    
+    
+    
+    <div id="content">
+    <h3>Bastion św. Jadwigi</h3>
+    <ul class="content">
+        <p><img src="img/bastion.jpg" width="890" id="obrazprawy"/>
+        Bastion wybudowany został w r. 1643, a następnie przebudowany w l. 1742-1758 według projektu gen. G.C. Walware. Składa się z nasypów ziemnych i ceglano-kamiennych budowli kazamatowych, powstałych w latach 1771-1776. W okresie oblężenia Twierdzy Nysa przez wojska francuskie w 1807 r., na terenie bastionu urządzono laboratorium, w którym przygotowywano amunicję dla walczącej załogi. Przed rokiem 1859 kazamaty bastionu były wykorzystywane w charakterze koszar wojsk saperskich. Od 29-08-1870 r. w kazamatach bastionu przebywało ok. 500 francuskich jeńców wojny francusko-pruskiej.
+        
+        
+        </p>
+    </ul>
+    
+    </div>
+    
+
+</div>
+    
+</body>
+</html>

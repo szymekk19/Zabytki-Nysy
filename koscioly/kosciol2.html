@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Zabytki miasta Nysa</title>
+    
+    <script type="text/javascript">
+        function odliczanie()
+        {
+            var dzisiaj=new Date();
+            var godzina=dzisiaj.getHours();
+            var minuta=dzisiaj.getMinutes();
+            var sekunda=dzisiaj.getSeconds();
+            document.getElementById("zegar").innerHTML=godzina+":"+minuta+":"+sekunda;
+            
+            setTimeout("odliczanie()",1000);      
+        }
+    </script>
+    
+    
+</head>
+
+<body>
+<div id="container">
+    
+    <div id="logo">
+        <img src="../img/herbpowiatu.png" width="90" align="left" />
+        <img src="../img/herb.png" width="90" align="right" />
+        <h1><strong>Zabytki i atrakcje<br>miasta Nysa</strong></h1>
+    </div>
+    <div id="domek">
+        <a href="../index.html"><img src="../img/Home_Icon.svg"  width="55" align="middle"/></a></div>
+    
+    
+    <div id="nav"><a href="../koscioly/koscioly.html">KOŚCIOŁY</a></div>
+    <div id="nav"><a href="../atrakcje/atrakcje.html">ATRAKCJE</a></div>
+    <div id="nav"><a href="../zabytki/zabytki.html">ZABYTKI</a></div>
+    <div id="nav"><a href="../inne/inne.html">INNE</a></div>
+    <div id="zegar"></div>
+        <script type="text/javascript">
+            odliczanie();
+        </script>
+    
+    
+    
+    <div id="content">
+    <h3>Kościół Matki Bożej Bolesnej</h3>
+    <ul class="content">
+        <p><img src="img/rodziwiczowny.jpg" width="890" id="obrazprawy"/>
+        W marcu 1892 r. do Nysy przybyli pierwsi zakonnicy z nowo powstałego zakonu werbistów, którzy zamierzali utworzyć na terenie zakupionego przez siebie majątku w Górnej Wsi założyć pierwszy na terenie Niemiec dom misyjny. Wyboru lokalizacji nowego kościoła i klasztoru dokonał jego założyciel – Arnold Janssen, który uczynił to pod wpływem inspiracji Państwa Huch.
+        Kościół został wybudowany w 1907 r. w stylu neogotyckim. 
+        W ciągu kilkunastu lat udało im się wybudować obszerny klasztor oraz szkołę (prywatne gimnazjum) tzw. Święty Krzyż, na terenie ówczesnej parafii św. Jana Chrzciciela w Średniej Wsi. W 1941 r. na bazie tego zgromadzenia kard. Adolf Bertram utworzył nową parafię, która obejmowała Górną Wieś. Dekretem biskupa opolskiego Franciszka Jopa z 1979 r. parafia została poszerzona o 13 ulic z parafii św. Jakuba.  
+        
+        </p>
+    </ul>
+    
+    </div>
+    
+
+</div>
+    
+</body>
+</html>

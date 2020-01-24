@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabytki miasta Nysa</title>
+    
+    <script type="text/javascript">
+        function odliczanie()
+        {
+            var dzisiaj=new Date();
+            var godzina=dzisiaj.getHours();
+            var minuta=dzisiaj.getMinutes();
+            var sekunda=dzisiaj.getSeconds();
+            document.getElementById("zegar").innerHTML=godzina+":"+minuta+":"+sekunda;
+            
+            setTimeout("odliczanie()",1000);      
+        }
+    </script>
+    
+    <script type="text/javascript">
+        
+        
+        var i=1;
+        
+        function nextImage()
+        {
+            if(i<10)
+            {
+                i++;
+            }
+            else{ i=1;}
+            document.getElementById("box").innerHTML="<img src=\"img/slajdy/slajd"+i+".jpg\" width=\"950\" height=\"600\"/>";
+        }
+        
+        function prewImage()
+        {
+            if(i<=10 && i>1)
+            {
+                i--;
+            }else{i=10;}
+        
+            document.getElementById("box").innerHTML="<img src=\"img/slajdy/slajd"+i+".jpg\" width=\"950\" height=\"600\"/>";
+        }
+    </script>
+    
+</head>
+
+<body>
+<div id="container">
+    
+    <div id="logo">
+        <img src="img/herbpowiatu.png" width="90" align="left" />
+        <img src="img/herb.png" width="90" align="right" />
+        <p><strong>Zabytki i atrakcje<br>miasta Nysa</strong></p>
+    </div>
+    <div id="domek">
+        <a href="index.html"><img src="img/Home_Icon.svg"  width="55" align="middle"/></a></div>
+    
+    
+    <div id="nav"><a href="koscioly/koscioly.html">KOŚCIOŁY</a></div>
+    <div id="nav"><a href="atrakcje/atrakcje.html">ATRAKCJE</a></div>
+    <div id="nav"><a href="zabytki/zabytki.html">ZABYTKI</a></div>
+    <div id="nav"><a href="inne/inne.html">INNE</a></div>
+    <div id="zegar"></div>
+        <script type="text/javascript">
+            odliczanie();
+        </script>
+    
+    <div id="slider">
+        <div id="box">
+            <img src="img/slajdy/slajd1.jpg" width="950" height="600" >
+        </div>
+        <button class="prew" onclick="prewImage()">-</button>
+        <button class="next" onclick="nextImage()">+</button>
+	</div>
+
+</div>
+    
+</body>
+</html>

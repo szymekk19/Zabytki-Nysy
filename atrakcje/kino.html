@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Zabytki miasta Nysa</title>
+    
+    <script type="text/javascript">
+        function odliczanie()
+        {
+            var dzisiaj=new Date();
+            var godzina=dzisiaj.getHours();
+            var minuta=dzisiaj.getMinutes();
+            var sekunda=dzisiaj.getSeconds();
+            document.getElementById("zegar").innerHTML=godzina+":"+minuta+":"+sekunda;
+            
+            setTimeout("odliczanie()",1000);      
+        }
+    </script>
+    
+    
+</head>
+
+<body>
+<div id="container">
+    
+    <div id="logo">
+        <img src="../img/herbpowiatu.png" width="90" align="left" />
+        <img src="../img/herb.png" width="90" align="right" />
+        <h1><strong>Zabytki i atrakcje<br>miasta Nysa</strong></h1>
+    </div>
+    <div id="domek">
+        <a href="../index.html"><img src="../img/Home_Icon.svg"  width="55" align="middle"/></a></div>
+    
+    
+    <div id="nav"><a href="../koscioly/koscioly.html">KOŚCIOŁY</a></div>
+    <div id="nav"><a href="../atrakcje/atrakcje.html">ATRAKCJE</a></div>
+    <div id="nav"><a href="../zabytki/zabytki.html">ZABYTKI</a></div>
+    <div id="nav"><a href="../inne/inne.html">INNE</a></div>
+    <div id="zegar"></div>
+        <script type="text/javascript">
+            odliczanie();
+        </script>
+    
+    
+    
+    <div id="content">
+    <h3>Kino</h3>
+        <ul class="content">
+        <p><img src="img/kino.jpg" width="400" id="obrazlewy"/>
+        Kino Cinema N3D jako kino cyfrowe powstało we wrześniu 2011roku.
+        Jest kontynuatorem  "starego" kina POKÓJ, które funkcjonowało od ponad 50 lat i wychowało kilka pokoleń kinomanów.
+        Kino posiada dwie sale cyfrowe na 318 i 135 miejsc wyposażone w supernowoczesne fotele, projektory cyfrowe DCI Christie i Barco oraz  sprzęt nagłaśniający Dolby Digital Stereo CP 500.
+        Obie sale są klimatyzowane i przystosowane dla osób niepełnosprawnych.
+        W hallu kina usytuowano kawiarnię. 
+        W kinie organizowane są przeglądy filmowe , Noce Horrorów i Grozy, festiwale muzyczne oraz seanse edukacyjne.
+        </p>
+    </ul>
+    </div>
+    
+
+</div>
+    
+</body>
+</html>
